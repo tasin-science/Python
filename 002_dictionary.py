@@ -1,4 +1,36 @@
-#dictionary
+#### dictionary
+
+###normal dictionary
+
+person = {"Name":"Alice", "Age":25, "City":"New York"}
+print(person)
+person["Sex"] = "Female"
+print(person, "\n")
+
+## deleting the key-value pair 
+del person["Sex"]
+print(person, "\n")
+
+## deleting the key-value pair by pop function
+person.pop("City")
+print(person, "\n")
+
+
+## Key-value looping system
+bankaccount = {"Name":"Amir", "Transaction No.":"92339228", "Amount":625000}
+for key, value in person.items():
+    print(key, ":", value)
+print("\n")
+if "Name" in bankaccount:
+    print("Name is present.")
+else:
+    print("Name is not present")
+
+print("\n\n\n\n")
+
+
+
+### Nested dictionary 
 
 dict = {
     "dict1" : {"Name": "Alice", "Age":25},
@@ -7,11 +39,11 @@ dict = {
 print(dict , "\n")
 print(dict["dict1"]["Name"])
 print(dict["dict1"]["Age"])
-print(dict["dict2"]["Name"], ["dict2"]["Age"], "\n")
+print(dict["dict2"]["Name"], dict["dict2"]["Age"], "\n")
 
 
 
-#printing dictionary in vertical manner
+##printing nested dictionary in vertical manner
 import json
 course = {
     "crs1" : {"crs_name":"CSE103", "crs_title":"Basic Programming"},
