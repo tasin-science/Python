@@ -11,3 +11,6 @@ print(cvalues)
 print(type(cvalues))
 print(C)
 print(type(C))
+
+F = C * 9/5 + 32
+print(F)
