@@ -1,0 +1,11 @@
+VS code.
+
+how to integrate conda with vs code?
+What is python (or conda) environment?
+How to maintain multiple environment?
+
+Create an account on github
+Install git in your device
+How to connect with a remote repo using vs code
+
+Git basics: repo, branch, stage, commit, push, pull, merge
