@@ -103,5 +103,7 @@ print("\n")
 ### Boolean array indexing
 c = np.array([[1,2],[3,4],[5,6]])
 bool_idx = (a>2)
-print(bool_idx)
-print(a[bool_idx])
+print(bool_idx, "\n")
+print(a[bool_idx], "\n")
+# we can do this in short as 
+print(a[a>2])
