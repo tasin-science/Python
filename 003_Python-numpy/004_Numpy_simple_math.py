@@ -10,3 +10,10 @@ print(a + b, "\n")
 print(a - b, "\n")
 print(a * b, "\n")
 print(a / b, "\n")
+
+
+#### using arithmetic function
+print(np.add(a, b), "\n")
+print(np.subtract(a, b), "\n")
+print(np.multiply(a, b), "\n")
+print(np.divide(a, b), "\n")
