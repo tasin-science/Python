@@ -34,4 +34,9 @@ print("this is arange matrix with start=1, stop=10, step=2: \n", np.arange(1,10,
 ### linspace function
 # this function creates one row matrix with evenly spaced values between two limits.
 # structure: linspace(start, stop, num)
-print("This is linspace matrix: \n", np.linspace(0,10,2))
+print("This is linspace matrix: \n", np.linspace(0,10,2), "\n")
+
+
+
+# now let's fun, think what will happen if we go 0 to 1 by 1000 steps?
+print(np.arange(0,1,1000))
