@@ -22,7 +22,7 @@ print("this matrix's all elements are only 8: \n", np.full((3,4), 8), "\n")
 
 ### eye function
 # this function creates identity matrix
-print("this is identity matrix: \n", np.eye(3))
+print("this is identity matrix: \n", np.eye(3), "\n")
 
 
 ### arange function 
