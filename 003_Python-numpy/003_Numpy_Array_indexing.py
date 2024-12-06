@@ -88,10 +88,19 @@ print(a[2,0]) # (2,0) element of numpy 'a' matrix
 print(a[2,1]) # (2,1) element of numpy 'a' matrix
 print(a[2,2]) # (2,2) element of numpy 'a' matrix
 print(a[2,3]) # (2,3) element of numpy 'a' matrix
-
 print("\n")
+
+
 
 
 
 ### Printing Whole numpy matrix
 print(a)
+print("\n")
+
+
+
+### Boolean array indexing
+c = np.array([[1,2],[3,4],[5,6]])
+bool_idx(a>2)
+print(a>2)
