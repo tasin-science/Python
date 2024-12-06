@@ -28,7 +28,7 @@ print("this is identity matrix: \n", np.eye(3))
 ### arange function 
 # this function creates one row matrix with start stop step
 # structure: arange(start, stop, step)
-print("this is arange matrix with start=1, stop=10, step=2: \n" np.arange(1,10,2), "\n")
+print("this is arange matrix with start=1, stop=10, step=2: \n", np.arange(1,10,2), "\n")
 
 
 ### linspace function
