@@ -26,4 +26,4 @@ print("\n")
 
 ### Using Broadcasting
 p = x + v
-print(p)
+print("in Broadcast manner: \n", p, "\n")
