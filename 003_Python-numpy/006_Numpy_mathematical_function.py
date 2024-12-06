@@ -5,5 +5,5 @@ a = np.array([[1,2],[3,4]])
 
 ### Sum function
 print(np.sum(a)) # compute sum of all elements
-print(np.sum(a, axis=0)) # compute sum by column
-print(np.sum(a, axis=1)) # compute sum by row
+print(np.sum(a, axis=0)) # compute sum of each column
+print(np.sum(a, axis=1)) # compute sum of each row
