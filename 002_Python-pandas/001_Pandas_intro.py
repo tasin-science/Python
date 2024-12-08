@@ -23,7 +23,9 @@ print("\n\n")
 
 ### Reading a Spreadsheet file
 df = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
-print(df)
+print(df, "\n")
+
+
 
 
 ### Show Rows and Columns
@@ -38,5 +40,8 @@ print(df.head(), "\n\n") ## head() method
 print(df.head(10), "\n\n") ## first 10 rows
 print(df.tail(), "\n\n") ## tail() method
 print(df.tail(10), "\n\n") ## last 10 rows
+
+
+
 
 
