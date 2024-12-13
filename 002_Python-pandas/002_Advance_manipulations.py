@@ -193,7 +193,7 @@ print(f"Mode of Product_A: {mode.tolist()}")
 print("\n\n\n")
 
 
-### Indexing
+### Index System
 #<>
 ## Range Index
 print("Range Index is: ", df.index, "\n\n\n")
