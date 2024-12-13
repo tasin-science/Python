@@ -35,6 +35,9 @@ print("Printing tail(10) for df[\'Product_A\']>=2000: \n\n", df[df['Product_A']>
 df1 = df[df['Product_A']>= 2000]
 print("df[\'Product_A\']>= 2000 tuples are stored in a new dataframe df1")
 print("df1 dataframe is: \n", df1, "\n\n\n")
+#<>
+# Note: max() of df1 is as same as max() of df in this program
+#<>
 print("min() of df1:")
 print("for Product_A in df1: ", df1['Product_A'].min())
 print("for Product_B in df1: ", df1['Product_B'].min())
@@ -42,6 +45,28 @@ print("for Product_C in df1: ", df1['Product_C'].min(), "\n\n\n")
 print("std() of df1 vs std() of df")
 print("for Product_A, std() of df1: ", df1['Product_A'].std(), " but std() of df: ", df['Product_A'].std())
 print("for Product_B, std() of df1: ", df1['Product_B'].std(), " but std() of df: ", df['Product_B'].std())
-print("for Product_C, std() of df1: ", df1['Product_C'].std(), " but std() of df: ", df['Product_C'].std())
-
-
+print("for Product_C, std() of df1: ", df1['Product_C'].std(), " but std() of df: ", df['Product_C'].std(), "\n\n\n")
+print("mean() of df1: ")
+print("for Product_A in df1: ", df1['Product_A'].mean())
+print("for Product_B in df1: ", df1['Product_B'].mean())
+print("for Product_C in df1: ", df1['Product_C'].mean(), "\n\n\n")
+print("median() of df1: ")
+print("for Product_A in df1: ", df1['Product_A'].median())
+print("for Product_B in df1: ", df1['Product_B'].median())
+print("for Product_C in df1: ", df1['Product_C'].median(), "\n\n\n")
+print("mode() of df1: ")
+print("for Product_A in df1: ", df1[['Product_A']].mode())
+print("for Product_B in df1: ", df1[['Product_B']].mode())
+print("for Product_C in df1: ", df1[['Product_C']].mode(), "\n\n\n")
+print("describe() of df1: ")
+print("for Product_A in df1: ", df1[['Product_A']].describe())
+print("for Product_B in df1: ", df1[['Product_B']].describe())
+print("for Product_C in df1: ", df1[['Product_C']].describe(), "\n\n\n")
+#<>
+df2 = df[df['Product_A']<= 2000]
+print("df[\'Product_A\']<= 2000 tuples are stored in a new dataframe df2")
+print("df2 dataframe is: \n", df2, "\n\n\n")
+print("max() of df2:")
+print("for Product_A in df2: ", df2['Product_A'].max())
+print("for Product_B in df2: ", df2['Product_B'].max())
+print("for Product_C in df2: ", df2['Product_C'].max(), "\n\n\n")
