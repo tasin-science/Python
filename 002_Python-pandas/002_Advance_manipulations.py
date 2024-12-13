@@ -8,18 +8,14 @@ print(df)
 print("\n\n\n")
 
 
-
 ### Indexing and slicing the dataframe
 print("index 10 to 20 in the dataframe are shown as using df[10:21]: \n")
 print(df[10:21], "\n\n\n") #index 10 to 20
 
 
-
-
 ### Columns printing
 print("Column's are showing by using df.columns:")
 print(df.columns, "\n\n\n")
-
 
 
 ### One Column tuples printing
@@ -46,9 +42,6 @@ print("Printing tail() for df[['Product_A']]: \n\n", df[['Product_A']].tail(), "
 print("Printing tail(10) for df[['Product_A']]: \n\n", df[['Product_A']].tail(10), "\n\n\n")
 
 
-
-
-
 ### Multiple column printing
 print("Product_A, Product_B, Product_C columns dataframe is printing by df[['Product_A', 'Product_B','Product_C']]: \n")
 print(df[['Product_A', 'Product_B', 'Product_C']], "\n\n\n")
@@ -60,10 +53,6 @@ print("Printing head() for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", d
 print("Printing head(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].head(10), "\n\n\n")
 print("Printing tail() for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(), "\n\n\n")
 print("Printing tail(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(10), "\n\n\n")
-
-
-
-
 
 
 ### max()
@@ -90,7 +79,6 @@ print("\n\n\n")
 #<>
 # Same are applicable for mean(), std(), min(), var()
 # note: it is better to use [] for max(), mean(), std(), min(), var() because it gives only number. 
-
 
 
 ### mean()
@@ -149,8 +137,6 @@ print(df['Product_C'].mode().tolist())
 print("\n\n\n")
 
 
-
-
 ### describe()
 #<>
 ## describe() printing by df[]
@@ -175,8 +161,6 @@ print("\n\n\n")
 # note: it is better to use mode(), describe() as [[]]
 
 
-
-
 ### another systemic printing describe
 #<>
 ## Calculate statistics for Product_A
@@ -194,7 +178,6 @@ print(f"Variance of Product_A: {variance}")
 print(f"Median of Product_A: {median}")
 print(f"Mode of Product_A: {mode.tolist()}")
 print("\n\n\n")
-
 
 
 ### Indexing
