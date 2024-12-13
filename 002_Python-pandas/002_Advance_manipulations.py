@@ -180,20 +180,24 @@ print("\n\n\n")
 
 
 
-
-### Range Index
+### Indexing
+#<>
+## Range Index
 print("Range Index is: ", df.index, "\n\n\n")
-
-### set_index()
+#<>
+## set_index()
 print("Making Product_A as index of dataframe: \n",)
 print(df.set_index('Product_A'))
 print("\n\n\n")
 #<>
-## inplace=True and locating
+## inplace=True and locating in set_index()
 print("Making Product_C as permanent index and locating value 800.0:")
 print(df.set_index('Product_C', inplace=True), "\n") # Permanent index setting
 print(df.loc[800.0])
-
-### reset_index()
+print("\n\n\n")
+#<>
+## reset_index()
+print("Resetting index and showing dataframe: \n")
 print(df.reset_index(inplace=True)) ## Permanent reset
 print(df)
+print("\n\n\n")
