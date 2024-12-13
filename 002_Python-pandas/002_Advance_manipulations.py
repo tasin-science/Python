@@ -106,25 +106,25 @@ print("\n\n\n")
 
 ### mode()
 #<>
-# normally printing mode by df[]
+## normally printing mode by df[]
 print("mode() of Product_A, Product_B, Product_C printing by df[]: \n")
 print(df['Product_A'].mode(), "\n")
 print(df['Product_B'].mode(), "\n")
 print(df['Product_C'].mode(), "\n")
 print("\n\n\n")
 #<>
-# normally printing mode by df[[]]
+## normally printing mode by df[[]]
 print("mode() of Product_A, Product_B, Product_C printing by df[[]]: \n")
 print(df[['Product_A']].mode(), "\n")
 print(df[['Product_B']].mode(), "\n")
 print(df[['Product_C']].mode(), "\n")
 print("\n\n\n")
 #<>
-# Together Product_A, Product_B, Product_C mode() printing
+## Together Product_A, Product_B, Product_C mode() printing
 print("mode() of Product_A, Product_B, Product_C printing together: \n")
 print(df[['Product_A', 'Product_B', 'Product_C']].mode(), "\n")
 #<>
-# using tolist() with mode()
+## using tolist() with mode()
 print("mode().tolist() of Product_A, Product_B, Product_C printing: \n")
 print(df['Product_A'].mode().tolist())
 print(df['Product_B'].mode().tolist())
@@ -150,7 +150,7 @@ print(df[['Product_B']].describe(), "\n")
 print(df[['Product_C']].describe(), "\n")
 print("\n\n\n")
 #<>
-# describe() printing by df[[]] as multiple columns together
+## describe() printing by df[[]] as multiple columns together
 print("describe() of Product_A, Product_B, Product_C together printing by df[[]]: \n")
 print(df[['Product_A', 'Product_B', 'Product_C']].describe())
 print("\n\n\n")
@@ -162,7 +162,7 @@ print("\n\n\n")
 
 ### another systemic printing describe
 #<>
-# Calculate statistics for Product_A
+## Calculate statistics for Product_A
 print("Another way to print describe without describe() function: \n")
 average = df['Product_A'].mean()
 std_dev = df['Product_A'].std()
@@ -170,7 +170,7 @@ variance = df['Product_A'].var()
 median = df['Product_A'].median()
 mode = df['Product_A'].mode()
 #<>
-# Display the results
+## Display the results
 print(f"Average (Mean) of Product_A: {average}")
 print(f"Standard Deviation of Product_A: {std_dev}")
 print(f"Variance of Product_A: {variance}")
@@ -182,12 +182,17 @@ print("\n\n\n")
 
 
 ### Range Index
-print(df.index, "\n")
+print("Range Index is: ", df.index, "\n\n\n")
 
 ### set_index()
-print(df.set_index('Product_A'), "\n")
-print(df.set_index('Product_C', inplace=True), "\n") ## Permanent index setting
-print(df.loc[840.0])
+print("Making Product_A as index of dataframe: \n",)
+print(df.set_index('Product_A'))
+print("\n\n\n")
+#<>
+## inplace=True and locating
+print("Making Product_C as permanent index and locating value 800.0:")
+print(df.set_index('Product_C', inplace=True), "\n") # Permanent index setting
+print(df.loc[800.0])
 
 ### reset_index()
 print(df.reset_index(inplace=True)) ## Permanent reset
