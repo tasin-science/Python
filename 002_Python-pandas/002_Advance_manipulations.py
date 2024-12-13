@@ -9,7 +9,7 @@ print("\n\n\n")
 
 
 ### Indexing and slicing the dataframe
-print("index 10 to 20 in the dataframe are shown as using df[10:21]: \n")
+print("index 10 to 20 in the dataframe are shown by using df[10:21]: \n")
 print(df[10:21], "\n\n\n") #index 10 to 20
 
 
@@ -18,41 +18,54 @@ print("Column's are showing by using df.columns:")
 print(df.columns, "\n\n\n")
 
 
-### One Column tuples printing
+### Single Column dataframe
 #<>
 ## First type doesn't show header
 print("Headerless one column Product_A is printing by df.Product_A: \n")
 print(df.Product_A, "\n\n\n")
 #<>
-## Second type doesn't show header, but it is Series printing. This doesn't allow for showing multiple columns
+## Second type doesn't show header, but it is Series printing. It is not applicable for selecting tuples of multiple columns
 print("Headerless Product_A column series dataframe is printing by df['Product_A']: \n")
 print(df['Product_A'], "\n\n\n")
 #<>
-## Third type shows header, and it is applicable for multiple column
-print("Product_A column dataframe is printing by df[['Product_A']]: \n")
+## Third type shows header, and it is also applicable for selecting tuples of multiple columns
+print("Product_A column dataframe is printing by df[[\'Product_A\']]: \n")
 print(df[['Product_A']], "\n\n\n")
 #<>
 # note: it is better to use [[]] whatever single column or multiple column in dataframe manipulation. 
 #<>
-# ".shape", head(), tail() for single column
-print("Printing .shape for df[['Product_A']]: ", df[['Product_A']].shape, "\n\n\n")
-print("Printing head() for df[['Product_A']]: \n\n", df[['Product_A']].head(), "\n\n\n")
-print("Printing head(10) for df[['Product_A']]: \n\n", df[['Product_A']].head(10), "\n\n\n")
-print("Printing tail() for df[['Product_A']]: \n\n", df[['Product_A']].tail(), "\n\n\n")
-print("Printing tail(10) for df[['Product_A']]: \n\n", df[['Product_A']].tail(10), "\n\n\n")
+## ".shape", head(), tail() for single column dataframe
+print("Printing .shape for df[[\'Product_A\']]: ", df[['Product_A']].shape, "\n\n\n")
+print("Printing head() for df[[\'Product_A\']]: \n\n", df[['Product_A']].head(), "\n\n\n")
+print("Printing head(10) for df[[\'Product_A\']]: \n\n", df[['Product_A']].head(10), "\n\n\n")
+print("Printing tail() for df[[\'Product_A\']]: \n\n", df[['Product_A']].tail(), "\n\n\n")
+print("Printing tail(10) for df[[\'Product_A\']]: \n\n", df[['Product_A']].tail(10), "\n\n\n")
+#<>
+## Indexing and slicing for single column dataframe
+df1 = df[['Product_A']]
+print("df[[\'Product_A\']] is kept into new dataframe df1")
+print("So, index 10 to 20 in that df1 dataframe are shown by using df1[10:21]: \n")
+print(df1[10:21], "\n\n\n") #index 10 to 20
 
 
-### Multiple column printing
-print("Product_A, Product_B, Product_C columns dataframe is printing by df[['Product_A', 'Product_B','Product_C']]: \n")
+
+### Multiple column dataframe 
+print("Product_A, Product_B, Product_C columns dataframe is printing by df[[\'Product_A\', \'Product_B\', \'Product_C\']]: \n")
 print(df[['Product_A', 'Product_B', 'Product_C']], "\n\n\n")
 # note: it is better to use [[]] whatever single column or multiple column in dataframe manipulation. 
 #<>
-# ".shape", head(), tail() for multiple column
-print("Printing .shape for df[['Product_A', 'Product_B', 'Product_C']]: ", df[['Product_A', 'Product_B', 'Product_C']].shape, "\n\n\n")
-print("Printing head() for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].head(), "\n\n\n")
-print("Printing head(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].head(10), "\n\n\n")
-print("Printing tail() for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(), "\n\n\n")
-print("Printing tail(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(10), "\n\n\n")
+# ".shape", head(), tail() for multiple column dataframe
+print("Printing .shape for df[[\'Product_A\', \'Product_B\', \'Product_C\']]: ", df[['Product_A', 'Product_B', 'Product_C']].shape, "\n\n\n")
+print("Printing head() for df[[\'Product_A\', \'Product_B\', \'Product_C\']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].head(), "\n\n\n")
+print("Printing head(10) for df[[\'Product_A\', \'Product_B\', \'Product_C\']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].head(10), "\n\n\n")
+print("Printing tail() for df[[\'Product_A\', \'Product_B\', \'Product_C\']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(), "\n\n\n")
+print("Printing tail(10) for df[[\'Product_A\', \'Product_B\', \'Product_C\']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(10), "\n\n\n")
+## Indexing and slicing for single column dataframe
+df2 = df[['Product_A']]
+print("df[[\'Product_A\']] is kept into new dataframe df2")
+print("So, index 10 to 20 in that df2 dataframe are shown by using df2[10:21]: \n")
+print(df2[10:21], "\n\n\n") #index 10 to 20
+
 
 
 ### max()
