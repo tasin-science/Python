@@ -20,7 +20,7 @@ print(df.Product_A, "\n\n")
 print(df[['Product_A','Product_B','Product_C']], "\n\n")
 
 ### max()
-print(df['Product_A'].max())
+print(df[['Product_A']].max())
 print(df['Product_B'].max())
 print(df['Product_C'].max())
 print("\n\n")
