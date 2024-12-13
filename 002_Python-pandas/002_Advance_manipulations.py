@@ -71,14 +71,14 @@ print(df2[10:21], "\n\n\n") #index 10 to 20
 ### max()
 #<>
 ## max() printing by df[]
-print("max() of Product_A, Product_B, Product_C printing by df[]: \n")
+print("max() of Product_A, Product_B, Product_C printing for df[]: \n")
 print(df['Product_A'].max())
 print(df['Product_B'].max())
 print(df['Product_C'].max())
 print("\n\n\n")
 #<>
 ## max() printing as df[[]]
-print("max() of Product_A, Product_B, Product_C printing by df[[]]: \n")
+print("max() of Product_A, Product_B, Product_C printing for df[[]]: \n")
 print(df[['Product_A']].max())
 print(df[['Product_B']].max())
 print(df[['Product_C']].max())
