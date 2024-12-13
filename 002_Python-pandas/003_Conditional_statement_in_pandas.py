@@ -4,6 +4,7 @@
 
 import pandas as pd
 df = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+print("\n\n\n Whole dataframe \'df\' is shown: ", "\n")
 print(df, "\n\n\n")
 
 ### Using Conditional Operation
@@ -34,8 +35,13 @@ print("Printing tail(10) for df[\'Product_A\']>=2000: \n\n", df[df['Product_A']>
 df1 = df[df['Product_A']>= 2000]
 print("df[\'Product_A\']>= 2000 tuples are stored in a new dataframe df1")
 print("df1 dataframe is: \n", df1, "\n\n\n")
-print("max() of df1:")
-print("for Product_A in df1: ", df1['Product_A'].max())
-print("for Product_B in df1: ", df1['Product_B'].max())
-print("for Product_C in df1: ", df1['Product_C'].max(), "\n")
+print("min() of df1:")
+print("for Product_A in df1: ", df1['Product_A'].min())
+print("for Product_B in df1: ", df1['Product_B'].min())
+print("for Product_C in df1: ", df1['Product_C'].min(), "\n\n\n")
+print("std() of df1 vs std() of df")
+print("for Product_A, std() of df1: ", df1['Product_A'].std(), " but std() of df: ", df['Product_A'].std())
+print("for Product_B, std() of df1: ", df1['Product_B'].std(), " but std() of df: ", df['Product_B'].std())
+print("for Product_C, std() of df1: ", df1['Product_C'].std(), " but std() of df: ", df['Product_C'].std())
+
 
