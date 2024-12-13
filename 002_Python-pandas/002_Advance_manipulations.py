@@ -120,6 +120,10 @@ print(df[['Product_B']].mode(), "\n")
 print(df[['Product_C']].mode(), "\n")
 print("\n\n\n")
 #<>
+# Together Product_A, Product_B, Product_C mode() printing
+print("mode() of Product_A, Product_B, Product_C printing together: \n")
+print(df[['Product_A', 'Product_B', 'Product_C']].mode(), "\n")
+#<>
 # using tolist() with mode()
 print("mode().tolist() of Product_A, Product_B, Product_C printing: \n")
 print(df['Product_A'].mode().tolist())
