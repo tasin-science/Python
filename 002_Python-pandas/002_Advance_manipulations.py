@@ -2,7 +2,7 @@
 
 import pandas as pd
 df = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
-print("Whole dataframe \'df\' is shown: ", "\n")
+print("\n\n\n Whole dataframe \'df\' is shown: ", "\n")
 print(df)
 
 print("\n\n\n")
@@ -10,14 +10,14 @@ print("\n\n\n")
 
 
 ### Indexing and slicing the dataframe
-print("index 10 to 20 in the dataframe are shown as using df[10:21] \n")
+print("index 10 to 20 in the dataframe are shown as using df[10:21]: \n")
 print(df[10:21], "\n\n\n") #index 10 to 20
 
 
 
 
 ### Columns printing
-print("Column's are showing by using df.columns \n")
+print("Column's are showing by using df.columns:")
 print(df.columns, "\n\n\n")
 
 
@@ -28,12 +28,12 @@ print(df.columns, "\n\n\n")
 print("Headerless one column Product_A is printing by df.Product_A: \n")
 print(df.Product_A, "\n\n\n")
 #<>
-## Second type shows header, but it is Series printing
-print("Product_A column series dataframe is printing by df['Product_A']: \n")
+## Second type doesn't show header, but it is Series printing
+print("Headerless Product_A column series dataframe is printing by df['Product_A']: \n")
 print(df['Product_A'], "\n\n\n")
 #<>
-## Third type shows header, but it is applicable for multiple column
-print("Product_A column dataframe is printing by df['Product_A']: \n")
+## Third type shows header, and it is applicable for multiple column
+print("Product_A column dataframe is printing by df[['Product_A']]: \n")
 print(df[['Product_A']], "\n\n\n")
 
 
