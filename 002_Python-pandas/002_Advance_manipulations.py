@@ -32,7 +32,8 @@ print(df['Product_A'], "\n\n\n")
 print("Product_A column dataframe is printing by df[[\'Product_A\']]: \n")
 print(df[['Product_A']], "\n\n\n")
 #<>
-# note: it is better to use [[]] whatever single column or multiple column in dataframe manipulation. 
+# note: it is better to use [[]] whatever single column or multiple column in dataframe manipulation.
+# note: for conditional statement or mean(), std(), min(), var(); then [] used. 
 #<>
 ## ".shape", head(), tail() for single column dataframe
 print("Printing .shape for df[[\'Product_A\']]: ", df[['Product_A']].shape, "\n\n\n")

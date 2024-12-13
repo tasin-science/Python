@@ -1,5 +1,7 @@
 #### Conditional Statement in Pandas
 
+# Note: For conditional statement, it is better to use df['<column_name>'], not df[['<column_name>']]
+
 import pandas as pd
 df = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
 print(df, "\n\n")
