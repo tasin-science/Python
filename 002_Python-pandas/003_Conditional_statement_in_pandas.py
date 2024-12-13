@@ -70,3 +70,5 @@ print("max() of df2:")
 print("for Product_A in df2: ", df2['Product_A'].max())
 print("for Product_B in df2: ", df2['Product_B'].max())
 print("for Product_C in df2: ", df2['Product_C'].max(), "\n\n\n")
+#<>
+# Note: min() of df2 is as same as min() of df in this program
