@@ -88,7 +88,7 @@ print("min() of Product_A, Product_B, Product_C printing: \n")
 print(df['Product_A'].min())
 print(df['Product_B'].min())
 print(df['Product_C'].min())
-print("\n\n")
+print("\n\n\n")
 
 ### variance
 print("variance [var()] of Product_A, Product_B, Product_C printing: \n")
@@ -96,6 +96,32 @@ print(df['Product_A'].var())
 print(df['Product_B'].var())
 print(df['Product_C'].var())
 print("\n\n\n")
+
+### standard deviation
+print("standard deviation [std()] of Product_A, Product_B, Product_C printing: \n")
+print(df['Product_A'].std())
+print(df['Product_B'].std())
+print(df['Product_C'].std())
+print("\n\n\n")
+
+### mode()
+#<>
+# normally printing mode
+print("mode() of Product_A, Product_B, Product_C printing: \n")
+print(df['Product_A'].mode())
+print(df['Product_B'].mode())
+print(df['Product_C'].mode())
+print("\n\n\n")
+#<>
+# using tolist() with mode()
+print("mode().tolist() of Product_A, Product_B, Product_C printing: \n")
+print(df['Product_A'].mode().tolist())
+print(df['Product_B'].mode().tolist())
+print(df['Product_C'].mode().tolist())
+print("\n\n\n")
+
+
+
 
 ### describe()
 #<>
@@ -117,22 +143,32 @@ print("\n\n\n")
 print("describe() of Product_A, Product_B, Product_C together printing by df[[]]: \n")
 print(df[['Product_A', 'Product_B', 'Product_C']].describe())
 print("\n\n\n")
+#<>
+# note: it is better to use describe() as [[]]
+
+
 
 
 ### another systemic printing describe
-    # Calculate statistics for Product_A
+#<>
+# Calculate statistics for Product_A
+print("Another way to print describe without describe() function: \n")
 average = df['Product_A'].mean()
 std_dev = df['Product_A'].std()
 variance = df['Product_A'].var()
 median = df['Product_A'].median()
 mode = df['Product_A'].mode()
-    # Display the results
+#<>
+# Display the results
 print(f"Average (Mean) of Product_A: {average}")
 print(f"Standard Deviation of Product_A: {std_dev}")
 print(f"Variance of Product_A: {variance}")
 print(f"Median of Product_A: {median}")
 print(f"Mode of Product_A: {mode.tolist()}")
-print("\n\n")
+print("\n\n\n")
+
+
+
 
 ### Range Index
 print(df.index, "\n")
