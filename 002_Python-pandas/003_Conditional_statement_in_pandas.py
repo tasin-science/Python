@@ -38,9 +38,4 @@ print("max() of df1:")
 print("for Product_A in df1: ", df1['Product_A'].max())
 print("for Product_B in df1: ", df1['Product_B'].max())
 print("for Product_C in df1: ", df1['Product_C'].max(), "\n")
-print("which is diffrent than max() of df:")
-print("for Product_A in df: ", df['Product_A'].max())
-print("for Product_B in df: ", df['Product_B'].max())
-print("for Product_C in df: ", df['Product_C'].max())
-
 
