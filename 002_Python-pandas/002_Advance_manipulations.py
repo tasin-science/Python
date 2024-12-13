@@ -39,11 +39,11 @@ print(df[['Product_A']], "\n\n\n")
 # note: it is better to use [[]] whatever single column or multiple column in dataframe manipulation. 
 #<>
 # ".shape", head(), tail() for single column
-print("Printing .shape for df[['Product_A']]: \n", df[['Product_A']].shape, "\n\n\n")
-print("Printing head() for df[['Product_A']]: \n", df[['Product_A']].head(), "\n\n\n")
-print("Printing head(10) for df[['Product_A']]: \n", df[['Product_A']].head(10), "\n\n\n")
-print("Printing tail() for df[['Product_A']]: \n", df[['Product_A']].tail(), "\n\n\n")
-print("Printing tail(10) for df[['Product_A']]: \n", df[['Product_A']].tail(10), "\n\n\n")
+print("Printing .shape for df[['Product_A']]: ", df[['Product_A']].shape, "\n\n\n")
+print("Printing head() for df[['Product_A']]: \n\n", df[['Product_A']].head(), "\n\n\n")
+print("Printing head(10) for df[['Product_A']]: \n\n", df[['Product_A']].head(10), "\n\n\n")
+print("Printing tail() for df[['Product_A']]: \n\n", df[['Product_A']].tail(), "\n\n\n")
+print("Printing tail(10) for df[['Product_A']]: \n\n", df[['Product_A']].tail(10), "\n\n\n")
 
 
 
@@ -55,11 +55,11 @@ print(df[['Product_A', 'Product_B', 'Product_C']], "\n\n\n")
 # note: it is better to use [[]] whatever single column or multiple column in dataframe manipulation. 
 #<>
 # ".shape", head(), tail() for multiple column
-print("Printing .shape for df[['Product_A', 'Product_B', 'Product_C']]: \n", df[['Product_A', 'Product_B', 'Product_C']].shape, "\n\n\n")
-print("Printing head() for df[['Product_A', 'Product_B', 'Product_C']]: \n", df[['Product_A', 'Product_B', 'Product_C']].head(), "\n\n\n")
-print("Printing head(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n", df[['Product_A', 'Product_B', 'Product_C']].head(10), "\n\n\n")
-print("Printing tail() for df[['Product_A', 'Product_B', 'Product_C']]: \n", df[['Product_A', 'Product_B', 'Product_C']].tail(), "\n\n\n")
-print("Printing tail(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n", df[['Product_A', 'Product_B', 'Product_C']].tail(10), "\n\n\n")
+print("Printing .shape for df[['Product_A', 'Product_B', 'Product_C']]: ", df[['Product_A', 'Product_B', 'Product_C']].shape, "\n\n\n")
+print("Printing head() for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].head(), "\n\n\n")
+print("Printing head(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].head(10), "\n\n\n")
+print("Printing tail() for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(), "\n\n\n")
+print("Printing tail(10) for df[['Product_A', 'Product_B', 'Product_C']]: \n\n", df[['Product_A', 'Product_B', 'Product_C']].tail(10), "\n\n\n")
 
 
 
