@@ -155,7 +155,7 @@ print("describe() of Product_A, Product_B, Product_C together printing by df[[]]
 print(df[['Product_A', 'Product_B', 'Product_C']].describe())
 print("\n\n\n")
 #<>
-# note: it is better to use describe() as [[]]
+# note: it is better to use mode(), describe() as [[]]
 
 
 
