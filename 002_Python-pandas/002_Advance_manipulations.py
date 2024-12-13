@@ -58,12 +58,17 @@ print(df['Product_B'].max())
 print(df['Product_C'].max())
 print("\n\n\n")
 #<>
-#max() printing as df[[]]
+## max() printing as df[[]]
 print("max() printing by df[]: \n")
 print(df[['Product_A']].max())
 print(df[['Product_B']].max())
 print(df[['Product_C']].max())
 print("\n\n\n")
+#<>
+## Check the types
+print("Let\'s check the type of both df[].max() and df[[]].max() using:\n")
+print("type(df[\'Product_A\'].max()) is:\n", type(df['Product_A'].max()))
+print("type(df[[\'Product_A\']].max()) is:\n", type(df[['Product_A']].max()))
 
 
 
