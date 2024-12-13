@@ -71,8 +71,8 @@ print("type(df[\'Product_A\'].max()) is:\n", type(df['Product_A'].max()))
 print("type(df[[\'Product_A\']].max()) is:\n", type(df[['Product_A']].max()))
 print("\n\n\n")
 #<>
-# Same are applicable for mean(), std(), min(), var(), mode()
-# note: it is better to use [] for max(), mean(), std(), min(), var(), mode() because it gives only number. 
+# Same are applicable for mean(), std(), min(), var()
+# note: it is better to use [] for max(), mean(), std(), min(), var() because it gives only number. 
 
 
 
@@ -106,11 +106,18 @@ print("\n\n\n")
 
 ### mode()
 #<>
-# normally printing mode
-print("mode() of Product_A, Product_B, Product_C printing: \n")
-print(df['Product_A'].mode())
-print(df['Product_B'].mode())
-print(df['Product_C'].mode())
+# normally printing mode by df[]
+print("mode() of Product_A, Product_B, Product_C printing by df[]: \n")
+print(df['Product_A'].mode(), "\n")
+print(df['Product_B'].mode(), "\n")
+print(df['Product_C'].mode(), "\n")
+print("\n\n\n")
+#<>
+# normally printing mode by df[[]]
+print("mode() of Product_A, Product_B, Product_C printing by df[[]]: \n")
+print(df[['Product_A']].mode(), "\n")
+print(df[['Product_B']].mode(), "\n")
+print(df[['Product_C']].mode(), "\n")
 print("\n\n\n")
 #<>
 # using tolist() with mode()
