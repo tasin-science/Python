@@ -41,14 +41,31 @@ print(df[['Product_A']], "\n\n\n")
 
 
 ### Multiple column printing
+print("Product_A, Product_B, Product_C columns dataframe is printing by df[['Product_A', 'Product_B','Product_C']]: \n")
 print(df[['Product_A','Product_B','Product_C']], "\n\n\n")
-# note: it is better to use [[]] whatever it is 
+# note: it is better to use [[]] whatever single column or multiple column. 
+
+
+
+
 
 ### max()
-print(df[['Product_A']].max())
+#<>
+## max() printing by df[]
+print("max() printing by df[]: \n")
+print(df['Product_A'].max())
 print(df['Product_B'].max())
 print(df['Product_C'].max())
-print("\n\n")
+print("\n\n\n")
+#<>
+#max() printing as df[[]]
+print("max() printing by df[]: \n")
+print(df[['Product_A']].max())
+print(df[['Product_B']].max())
+print(df[['Product_C']].max())
+print("\n\n\n")
+
+
 
 ### mean()
 print(df['Product_A'].mean())
