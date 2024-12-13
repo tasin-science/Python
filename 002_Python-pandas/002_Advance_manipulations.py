@@ -28,7 +28,7 @@ print(df.columns, "\n\n\n")
 print("Headerless one column Product_A is printing by df.Product_A: \n")
 print(df.Product_A, "\n\n\n")
 #<>
-## Second type doesn't show header, but it is Series printing
+## Second type doesn't show header, but it is Series printing. This doesn't allow for showing multiple columns
 print("Headerless Product_A column series dataframe is printing by df['Product_A']: \n")
 print(df['Product_A'], "\n\n\n")
 #<>
@@ -107,10 +107,15 @@ print(df['Product_C'].describe(), "\n")
 print("\n\n\n")
 #<>
 ## describe() printing by df[[]]
-print("describe() of Product_A, Product_B, Product_C printing by df[]: \n")
+print("describe() of Product_A, Product_B, Product_C printing by df[[]]: \n")
 print(df[['Product_A']].describe(), "\n")
 print(df[['Product_B']].describe(), "\n")
 print(df[['Product_C']].describe(), "\n")
+print("\n\n\n")
+#<>
+# describe() printing by df[[]] as multiple columns together
+print("describe() of Product_A, Product_B, Product_C together printing by df[[]]: \n")
+print(df[['Product_A', 'Product_B', 'Product_C']].describe())
 print("\n\n\n")
 
 
