@@ -43,7 +43,7 @@ print(df[['Product_A']], "\n\n\n")
 ### Multiple column printing
 print("Product_A, Product_B, Product_C columns dataframe is printing by df[['Product_A', 'Product_B','Product_C']]: \n")
 print(df[['Product_A','Product_B','Product_C']], "\n\n\n")
-# note: it is better to use [[]] whatever single column or multiple column. 
+# note: it is better to use [[]] whatever single column or multiple column in dataframe manipulation. 
 
 
 
@@ -52,14 +52,14 @@ print(df[['Product_A','Product_B','Product_C']], "\n\n\n")
 ### max()
 #<>
 ## max() printing by df[]
-print("max() printing by df[]: \n")
+print("max() of Product_A, Product_B, Product_C printing by df[]: \n")
 print(df['Product_A'].max())
 print(df['Product_B'].max())
 print(df['Product_C'].max())
 print("\n\n\n")
 #<>
 ## max() printing as df[[]]
-print("max() printing by df[]: \n")
+print("max() of Product_A, Product_B, Product_C printing by df[[]]: \n")
 print(df[['Product_A']].max())
 print(df[['Product_B']].max())
 print(df[['Product_C']].max())
@@ -69,32 +69,50 @@ print("\n\n\n")
 print("Let\'s check the type of both df[].max() and df[[]].max() using:\n")
 print("type(df[\'Product_A\'].max()) is:\n", type(df['Product_A'].max()))
 print("type(df[[\'Product_A\']].max()) is:\n", type(df[['Product_A']].max()))
+print("\n\n\n")
+#<>
+# Same are applicable for mean(), std(), min(), var(), mode()
+# note: it is better to use [] for max(), mean(), std(), min(), var(), mode() because it gives only number. 
 
 
 
 ### mean()
+print("mean() of Product_A, Product_B, Product_C printing: \n")
 print(df['Product_A'].mean())
 print(df['Product_B'].mean())
 print(df['Product_C'].mean())
-print("\n\n")
+print("\n\n\n")
 
 ### min()
+print("min() of Product_A, Product_B, Product_C printing: \n")
 print(df['Product_A'].min())
 print(df['Product_B'].min())
 print(df['Product_C'].min())
 print("\n\n")
 
 ### variance
+print("variance [var()] of Product_A, Product_B, Product_C printing: \n")
 print(df['Product_A'].var())
 print(df['Product_B'].var())
 print(df['Product_C'].var())
-print("\n\n")
+print("\n\n\n")
 
 ### describe()
+#<>
+## describe() printing by df[]
+print("describe() of Product_A, Product_B, Product_C printing by df[]: \n")
 print(df['Product_A'].describe(), "\n")
 print(df['Product_B'].describe(), "\n")
 print(df['Product_C'].describe(), "\n")
-print("\n\n")
+print("\n\n\n")
+#<>
+## describe() printing by df[[]]
+print("describe() of Product_A, Product_B, Product_C printing by df[]: \n")
+print(df[['Product_A']].describe(), "\n")
+print(df[['Product_B']].describe(), "\n")
+print(df[['Product_C']].describe(), "\n")
+print("\n\n\n")
+
 
 ### another systemic printing describe
     # Calculate statistics for Product_A
