@@ -72,3 +72,33 @@ print("for Product_B in df2: ", df2['Product_B'].max())
 print("for Product_C in df2: ", df2['Product_C'].max(), "\n\n\n")
 #<>
 # Note: min() of df2 is as same as min() of df in this program
+#<>
+## Slicing (df[:]) is not possible in this condition case
+#<>
+## Range Index
+print("Range Index of df1 is: ", df1.index)
+print("Range Index of df2 is: ", df2.index, "\n\n\n")
+#<>
+## set_index()
+print("Making Product_B as index of df1 dataframe: \n",)
+print(df1.set_index('Product_B'))
+print("\n\n\n")
+print("Making Product_C as index of df2 dataframe: \n",)
+print(df2.set_index('Product_C'))
+print("\n\n\n")
+#<>
+## inplace=True and locating in set_index()
+print("Making Product_B of df1 as permanent index and locating value of 2500:")
+print(df1.set_index('Product_B', inplace=True), "\n") # Permanent index setting
+print(df1.loc[2500])
+print("\n\n\n")
+print("Making Product_C of df2 as permanent index and locating value of 800.0:")
+print(df2.set_index('Product_C', inplace=True), "\n") # Permanent index setting
+print(df.loc[800.0])
+print("\n\n\n")
+#<>
+## reset_index()
+print("Resetting index and showing dataframe: \n")
+print(df.reset_index(inplace=True)) ## Permanent reset
+print(df)
+print("\n\n\n")
