@@ -85,6 +85,11 @@ print(df[['Product_B']].max())
 print(df[['Product_C']].max())
 print("\n\n\n")
 #<>
+# printing max() of every column together
+print("max() of Product_A, Product_B, Product_C printing together: \n")
+print(df[['Product_A', 'Product_B', 'Product_C']].max())
+print("\n\n\n")
+#<>
 ## Check the types
 print("Let\'s check the type of both df[].max() and df[[]].max() using:\n")
 print("type(df[\'Product_A\'].max()) is:\n", type(df['Product_A'].max()))
@@ -93,6 +98,7 @@ print("\n\n\n")
 #<>
 # Same are applicable for mean(), std(), min(), var()
 # note: it is better to use [] for max(), mean(), std(), min(), var() because it gives only number. 
+# note: For printing every column's max(), mean(), std(), min(), var() together, then there is needed [[]]
 
 
 ### mean()
