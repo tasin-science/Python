@@ -94,7 +94,7 @@ print(df1.loc[2500])
 print("\n\n\n")
 print("Making Product_C of df2 as permanent index and locating value of 800.0:")
 print(df2.set_index('Product_C', inplace=True), "\n") # Permanent index setting
-print(df.loc[800.0])
+print(df2.loc[800.0])
 print("\n\n\n")
 #<>
 ## reset_index()
