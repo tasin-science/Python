@@ -12,5 +12,9 @@ print(df.groupby('Year')['Product_A'].mean(), "\n\n\n")
 print("Calculate the averages of Product A, 'Product B' and 'Product C' according years")
 print(df.groupby('Year')[['Product_A', 'Product_B', 'Product_C']].mean(), "\n\n\n")
 
-df1 = df[['Product_A', 'Product_B', 'Product_C']].mean()
-print(df1)
+dictionary = {
+    'Product_A' : df['Product_A'].mean(),
+    'Product_B' : df['Product_B'].mean(),
+    'Product_C' : df['Product_C'].mean()
+}
+print(dictionary)
