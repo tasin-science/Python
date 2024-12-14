@@ -101,5 +101,5 @@ print("\n\n\n")
 print("Resetting index and showing dataframe: \n")
 print(df1.reset_index(inplace=True)) ## Permanent reset
 print(df2.reset_index(inplace=True)) ## Permanent reset
-print("\n After resetting, \n\n df1 is: \n\n\n", df1, "\n\n and df2 is: \n\n", df2)
+print("\n After resetting, \n\n df1 is: \n\n", df1, "\n\n\n and df2 is: \n\n", df2)
 print("\n\n\n")
