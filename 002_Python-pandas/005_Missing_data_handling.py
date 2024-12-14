@@ -4,6 +4,8 @@ import pandas as pd
 df = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
 print(df, "\n\n")
 
+print(df.isnull(), "\n\n")
+
 ### Checking missing datas
 print(df.isnull().sum(), "\n")
 ### Priniting rows which contains missing values
