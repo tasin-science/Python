@@ -13,5 +13,5 @@ print("Calculate the averages of Product A, 'Product B' and 'Product C' accordin
 print(df.groupby('Year')[['Product_A', 'Product_B', 'Product_C']].mean(), "\n\n\n")
 
 ### Group by nothing
-print(df.groupby('\0')[['Product_A', 'Product_B', 'Product_C']].mean(), "\n\n\n")
+print(df.groupby('')[['Product_A', 'Product_B', 'Product_C']].mean(), "\n\n\n")
 
