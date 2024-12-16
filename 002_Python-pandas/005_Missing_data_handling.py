@@ -2,12 +2,22 @@
 
 import pandas as pd
 df = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
-print(df, "\n\n")
+print(df, "\n\n\n")
 
-### Checking missing datas
-print(df.isnull().sum(), "\n")
-### Priniting rows which contains missing values
-print(df[df.isnull().any(axis=1)], "\n\n")
+### isnull() function
+#<>
+## Checking missing data
+print("Checking missing data: ")
+print(df.isnull().sum(), "\n\n\n")
+#<>
+## Priniting rows which contains missing values
+print("Printing rows which contains missing values: \n")
+print(df[df.isnull().any(axis=1)], "\n\n\n")
+#<>
+## Printing only isnull() function
+print("Only isnull() function shows false and true boolean. Only missing values are here true, otherwise false: \n")
+print(df.isnull(), "\n\n\n")
+
 
 ### Dropping missing values
 print(df.dropna(), "\n\n")
