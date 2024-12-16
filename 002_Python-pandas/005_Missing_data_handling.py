@@ -85,14 +85,14 @@ print("\'df6\' dataframe is for filling missing values with backward fill")
 #<>
 #<>
 ## Forward fill
-df5['Product_A'] = df5['Product_A'].fillna(method='ffill')
-df5['Product_C'] = df5['Product_C'].fillna(method='ffill')
+df5['Product_A'] = df5['Product_A'].ffill()
+df5['Product_C'] = df5['Product_C'].ffill()
 print("Filling missing values by forward fill, and only showing that rows where values were missed: \n")
 print(df5[37:39], "\n\n\n")
 #<>
 ## Backward fill
-df6['Product_A'] = df6['Product_A'].fillna(method='bfill')
-df6['Product_C'] = df6['Product_C'].fillna(method='bfill')
+df6['Product_A'] = df6['Product_A'].bfill()
+df6['Product_C'] = df6['Product_C'].bfill()
 print("Filling missing values by backward fill, and only showing that rows where values were missed: \n")
 print(df6[37:39], "\n\n\n")
 
