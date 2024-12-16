@@ -2,6 +2,7 @@
 
 import pandas as pd
 df = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+print("\n\n\n Whole dataframe \'df\' is shown: ", "\n")
 print(df, "\n\n\n")
 
 ### isnull() function
@@ -31,10 +32,18 @@ print(df.dropna(axis=1), "\n\n\n")
 
 
 
-### filling missing values with a specific value
-df['Product_A'] = df['Product_A'].fillna(0)
-df['Product_C'] = df['Product_C'].fillna(900)
-print(df[37:39], "\n\n")
+### Filling missing values
+print("For showing different type of filling missing values, we need to assign/copy main dataframe \'df\' to another dataframe.")
+print("Because if once main dataframe\'s missing value filled, then it can\'t be possible to restore that")
+df1 = df
+print("\'df\' dataframe is assigned/copied in another new dataframe \'df1\'")
+print("\'df1\' dataframe is: \n", df1, "\n\n\n")
+#<>
+## Filling missing values with specific values
+df1['Product_A'] = df1['Product_A'].fillna(0)
+df1['Product_C'] = df1['Product_C'].fillna(900)
+print("Filling missing values with specific values, and only showing that rows where values were missed: \n")
+print(df1[37:39], "\n\n")
 
 
 
