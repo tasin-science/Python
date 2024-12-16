@@ -155,7 +155,13 @@ print(df['Product_A'].mode().tolist())
 print(df['Product_B'].mode().tolist())
 print(df['Product_C'].mode().tolist())
 print("\n\n\n")
-
+#<>
+# Printing only one mode
+print("Printing only one mode: \n")
+print("First mode of Product_A : ", df['Product_A'].mode()[0])
+print("Second mode of Product_A : ", df['Product_A'].mode()[1])
+print("Third mode of Product_A : ", df['Product_A'].mode()[2])
+print("\n\n\n")
 
 ### describe()
 #<>
