@@ -16,12 +16,20 @@ print(df[df.isnull().any(axis=1)], "\n\n\n")
 #<>
 ## Printing only isnull() function
 print("Only isnull() function shows false and true boolean. Only missing values are here true, otherwise false: \n")
-print(df.isnull(), "\n\n\n")
+print(df.isnull(), "\n\n\n\n")
 
 
-### Dropping missing values
-print(df.dropna(), "\n\n")
-print(df.dropna(axis=1), "\n\n")
+### dropna() function
+#<>
+## Dropping rows which contains missing values
+print("Dropping rows which contains missing values: \n")
+print(df.dropna(), "\n\n\n")
+#<>
+## Dropping columns which contains missing values
+print("Dropping columns which contains missing values: \n")
+print(df.dropna(axis=1), "\n\n\n")
+
+
 
 ### filling missing values with a specific value
 df['Product_A'] = df['Product_A'].fillna(0)
