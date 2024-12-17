@@ -34,11 +34,11 @@ print(df.dropna(axis=1), "\n\n\n")
 
 
 ### Filling missing values
-print("For showing different type of filling missing values, we need to assign/copy main dataframe \'df\' to another dataframe.")
-print("Because if once main dataframe\'s missing value filled, then it can\'t be possible to restore that")
-df1 = df
-print("\'df\' dataframe is assigned/copied in another new dataframe \'df1\'")
-print("\'df1\' dataframe is: \n", df1, "\n\n\n")
+print("For showing different type of filling missing values, we need to Read dataframe by using different dataframe variables.")
+print("Because once dataframe\'s missing value filled, then it can\'t be possible for using other methods")
+df1 = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+print("\'Dataset_Lab_Test.csv\' dataframe is assigned/copied in another new dataframe \'df1\'")
+print("\'Dataset_Lab_Test.csv\' dataframe is: \n", df1, "\n\n\n")
 #<>
 ## Filling missing values with specific values
 df1['Product_A'] = df1['Product_A'].fillna(0)
@@ -47,11 +47,11 @@ print("Filling missing values with specific values, and only showing that rows w
 print(df1[37:39], "\n\n\n")
 #<>
 #<>
-df2 = df
-df3 = df
-df4 = df
-print("\'df\' dataframe is assigned/copied in new dataframes \'df2\', \'df3\', \'df4\'")
-print("Those copies are as same as \'df\', so it is unnecessary for printing all of them. \n\n\n")
+df2 = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+df3 = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+df4 = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+print("\'Dataset_Lab_Test.csv\' dataframe is assigned/copied in new dataframes \'df2\', \'df3\', \'df4\'")
+print("Those copies are as same as \'df1\', so it is unnecessary for printing all of them. \n\n\n")
 print("\'df2\' dataframe is for filling missing values with mean")
 print("\'df3\' dataframe is for filling missing values with median")
 print("\'df4\' dataframe is for filling missing values with mode")
@@ -76,10 +76,10 @@ print("Filling missing values with mode, and only showing that rows where values
 print(df4[37:39], "\n\n\n")
 #<>
 #<>
-df5 = df
-df6 = df
-print("\'df\' dataframe is assigned/copied in new dataframes \'df5\', \'df6\' ")
-print("Those copies are as same as \'df\', so it is unnecessary for printing all of them. \n\n\n")
+df5 = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+df6 = pd.read_csv("Datasheet/Dataset_Lab_Test.csv")
+print("\'Dataset_Lab_Test.csv\' dataframe is assigned/copied in new dataframes \'df5\', \'df6\' ")
+print("Those copies are as same as \'df1\', so it is unnecessary for printing all of them. \n\n\n")
 print("\'df5\' dataframe is for filling missing values by forward fill")
 print("\'df6\' dataframe is for filling missing values with backward fill")
 #<>
