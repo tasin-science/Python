@@ -42,6 +42,9 @@ print(df.tail(), "\n\n") ## tail() method
 print(df.tail(10), "\n\n") ## last 10 rows
 
 
+### creating new column
+df['New_Col']
+print(df)
 
 
 
