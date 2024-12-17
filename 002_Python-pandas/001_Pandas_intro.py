@@ -43,12 +43,13 @@ print(df.tail(10), "\n\n\n") ## last 10 rows
 
 
 ### creating new column
-df['New_Col'] = 0
+df['New_Col'] = [0,1]
 print(df, "\n\n\n")
 #<>
 ## creating new column with arithmetic expression
 df['A+B+C'] = df['Product_A'] + df['Product_B'] + df['Product_C']
 print(df, "\n\n\n")
-
+#<>
+## creating new column with 
 
 
