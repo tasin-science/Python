@@ -43,7 +43,7 @@ print(df.tail(10), "\n\n\n") ## last 10 rows
 
 
 ### creating new column
-df['New_Col'] = [0,1]
+df['New_Col'] = 0
 print(df, "\n\n\n")
 #<>
 ## creating new column with arithmetic expression
