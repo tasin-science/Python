@@ -97,21 +97,3 @@ print("Filling missing values by backward fill, and only showing that rows where
 print(df6[37:39], "\n\n\n")
 
 
-
-
-
-
-
-
-
-
-
-###
-# Fill with the mean/median/mode
-# data['Column_Name'] = data['Column_Name'].fillna(data['Column_Name'].mean())
-# data['Column_Name'] = data['Column_Name'].fillna(data['Column_Name'].median())
-# data['Column_Name'] = data['Column_Name'].fillna(data['Column_Name'].mode()[0])
-
-# Forward/Backward fill
-# data['Column_Name'] = data['Column_Name'].fillna(method='ffill')  # Forward fill
-# data['Column_Name'] = data['Column_Name'].fillna(method='bfill')  # Backward fill
