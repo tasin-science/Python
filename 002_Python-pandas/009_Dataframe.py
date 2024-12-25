@@ -12,7 +12,7 @@ data = {
     'hobby' : ['Gardening', 'Programming', 'Learning']
 }
 df = pd.DataFrame(data)
-print(df, "\n\n")
+print(df, "\n\n\n")
 
 
 
@@ -30,7 +30,7 @@ geography = [
 ]
 
 df = pd.DataFrame(geography, columns=['Country', 'Capital', 'Area of Capital (km^2)'])
-print(df, "\n\n")
+print(df, "\n\n\n")
 
 
 
