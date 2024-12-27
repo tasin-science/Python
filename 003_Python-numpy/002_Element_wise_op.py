@@ -2,9 +2,11 @@
 
 import numpy as np
 
+### Shape
+# Shape shows (number of rows, number of columns)
 A = np.array([[1,2,3],[4,5,6]])
 print(A)
-print(A.shape) #shape shows (number of rows, number of columns)
+print(A.shape)
 B = np.array([[7,8,9],[10,11,12]])
 print(B)
 print(B.shape)
