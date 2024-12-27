@@ -7,64 +7,66 @@ a = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
 
 
 
-### (row column (rxc) typing show)
+### Matrix printing by selective row and column
+## in this case we will use [:row_amount,:col_amount] system
+#<>
 b_n_n = a[:,:] # n row and n column
 print(b_n_n, "\n")
-
+#<>
 b_n_1 = a[:,:1] # n row and 1 column
 print(b_n_1, "\n")
-
+#<>
 b_n_2 = a[:,:2] # n row and 2 column
 print(b_n_2, "\n")
-
+#<>
 b_n_3 = a[:,:3] # n row and 3 column
 print(b_n_3, "\n")
-
+#<>
 b_n_4 = a[:,:4] # n row and 4 column
 print(b_n_4, "\n")
-
+#<>
 b_1_n = a[:1,:] # 1 row and n column
 print(b_1_n, "\n")
-
+#<>
 b_1_1 = a[:1,:1] # 1 row and 1 column
 print(b_1_1, "\n")
-
+#<>
 b_1_2 = a[:1,:2] # 1 row and 2 column
 print(b_1_2, "\n")
-
+#<>
 b_1_3 = a[:1,:3] # 1 row and 3 column
 print(b_1_3, "\n")
-
+#<>
 b_1_4 = a[:1,:4] # 1 row and 4 column
 print(b_1_4, "\n")
-
+#<>
 b_2_n = a[:2,:] # 2 row and n column
 print(b_2_n, "\n")
-
+#<>
 b_2_1 = a[:2,:1] # 2 row and 1 column
 print(b_2_1, "\n")
-
+#<>
 b_2_2 = a[:2,:2] # 2 row and 2 column
 print(b_2_2, "\n")
-
+#<>
 b_2_3 = a[:2,:3] # 2 row and 3 column
 print(b_2_3, "\n")
-
+#<>
 b_2_4 = a[:2,:4] # 2 row and 4 column
 print(b_2_4, "\n")
-
+#<>
 b_3_n = a[:3,:] # 3 row and n column
 print(b_3_n, "\n")
-
+#<>
 b_3_1 = a[:3,:1] # 3 row and 1 column
 print(b_3_1, "\n")
-
+#<>
 b_3_2 = a[:3,:2] # 3 row and 2 column
 print(b_3_2, "\n")
-
+#<>
 b_3_3 = a[:3,:3] # 3 row and 3 column
 print(b_3_3, "\n")
-
+#<>
 b_3_4 = a[:3,:4] # 3 row and 4 column
 print(b_3_4, "\n")
 

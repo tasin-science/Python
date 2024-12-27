@@ -11,12 +11,26 @@ print("C value list: ", cvalues)
 print("The type of c value list is: ", type(cvalues), "\n")
 print("Celcius numpy array: ", C)
 print( "The type of Celcius numpy array is: ", type(C), "\n")
-
 F = C * 9/5 + 32
 print("Farenheit numpy array: ", F)
 print("\n\n\n")
 
+
+
 ### Converting numpy array as normal list4
 print("We want to make farenheit numpy array ", F, " as farenheit temperature list")
-Far_list = list(F)
+Far_list = F.tolist
 print("Farenheit temperature list is: ", Far_list)
+print("\n\n\n")
+
+
+
+### Matrix/2D list to matrix numpy
+m_list = [[1,2],[3,4]]
+print("Our two dimension list is: ", m_list)
+M = np.array(m_list)
+print("The numpy matrix of that two dimension list is\n: ", M)
+
+
+
+
