@@ -36,8 +36,7 @@ print("\n\n\n")
 
 
 ### data types of numpy array
-print("//data types of numpy array//")
-print("\n")
+print("//data types of numpy array// \n")
 B1 = np.array([1, 2, 3, 4])
 print("B1 numpy array is: ", B1)
 print("Data types of B1 is: ", B1.dtype)
@@ -69,8 +68,7 @@ print("\n\n\n")
 
 
 ### data type system using of numpy array
-print("//data type system using of numpy array//")
-print("\n")
+print("//data type system using of numpy array// \n")
 A1 = np.array([1, 2, 3, 4])
 print("A1 numpy array is: ", A1)
 print("data type of A1 is: ", A1.dtype)
