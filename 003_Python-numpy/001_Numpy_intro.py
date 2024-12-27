@@ -30,7 +30,26 @@ m_list = [[1,2],[3,4]]
 print("Our two dimension list is: ", m_list)
 M = np.array(m_list)
 print("The numpy matrix of that two dimension list is:\n", M)
+print("\n\n\n")
 
 
-
-
+### types of numpy array
+print("//Types of numpy array//")
+print("\n")
+A1 = np.array([1, 2, 3, 4])
+print("A1 numpy array is: ", A1)
+print("type of A1 is: ", type(A1))
+print("\n")
+#<>
+A2 = np.array([1, 2, 3, 4], dtype = np.float64)
+print("A2 numpy array is: ", A2)
+print("type of A2 is: ", type(A2))
+print("\n")
+#<>
+A3 = np.array([1, 2, 3, 4], dtype = np.complex128)
+print("A3 numpy array is: ", A3)
+print("type of A3 is: ", A3.dtype) # we can also write A3.dtype, which is as same as type(A3)
+#<>
+A4 = np.array([1, 2, 3, 4], dtype = np.bool_)
+print("A4 numpy array is: ", A4)
+print("type of A4 is: ", A4.dtype)
