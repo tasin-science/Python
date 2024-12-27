@@ -67,8 +67,8 @@ print("\n\n\n")
 
 
 
-### data type system using of numpy array
-print("//data type system using of numpy array// \n")
+### data type system using in numpy array
+print("//data type system using in numpy array// \n")
 A1 = np.array([1, 2, 3, 4])
 print("A1 numpy array is: ", A1)
 print("data type of A1 is: ", A1.dtype)
