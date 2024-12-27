@@ -1,4 +1,4 @@
-#### Numpy Simple Math ####
+#### Numpy Arithmetic Operation ####
 
 import numpy as np
 
