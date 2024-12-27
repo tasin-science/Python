@@ -36,7 +36,40 @@ print("\n\n\n")
 
 
 ### data types of numpy array
-print("//Types of numpy array//")
+print("//data types of numpy array//")
+print("\n")
+B1 = np.array([1, 2, 3, 4])
+print("B1 numpy array is: ", B1)
+print("Data types of B1 is: ", B1.dtype)
+print("\n")
+#<>
+B2 = np.array([1.0, 2.0, 3.0, 4.0])
+print("B2 numpy array is: ", B2)
+print("Data types of B2 is: ", B2.dtype)
+print("\n")
+#<>
+B3 = np.array([1+2j, 2+4j, 3+5.6j, 4+11j])
+print("B3 numpy array is: ", B3)
+print("Data types of B3 is: ", B3.dtype)
+print("\n")
+#<>
+B4 = np.array([True, False, True, True, False, True])
+print("B4 numpy array is: ", B4)
+print("Data types of B4 is: ", B4.dtype)
+print("\n")
+#<>
+B5 = np.array(['a', 'b', 'c', 'd'])
+print("B5 numpy array is: ", B5)
+print("Data types of B5 is: ", B5.dtype)
+print("\n\n\n")
+
+
+
+
+
+
+### data type system using of numpy array
+print("//data type system using of numpy array//")
 print("\n")
 A1 = np.array([1, 2, 3, 4])
 print("A1 numpy array is: ", A1)
