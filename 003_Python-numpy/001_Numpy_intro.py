@@ -17,9 +17,9 @@ print("\n\n\n")
 
 
 
-### Converting numpy array as normal list4
+### Converting numpy array as normal list
 print("We want to make farenheit numpy array ", F, " as farenheit temperature list")
-Far_list = F.tolist
+Far_list = F.tolist()
 print("Farenheit temperature list is: ", Far_list)
 print("\n\n\n")
 
@@ -29,7 +29,7 @@ print("\n\n\n")
 m_list = [[1,2],[3,4]]
 print("Our two dimension list is: ", m_list)
 M = np.array(m_list)
-print("The numpy matrix of that two dimension list is\n: ", M)
+print("The numpy matrix of that two dimension list is:\n", M)
 
 
 
