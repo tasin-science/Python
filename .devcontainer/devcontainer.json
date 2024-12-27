@@ -1,0 +1,3 @@
+{
+    "postCreateCommand": "pip install jupyterlab_extension_name && jupyter lab build"
+}
